@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+
+  height: 100vh;
+  width: 100vw;
+
+  background-color: rgba(0, 0, 0, 0.865);
+
+  overflow: hidden;
+}
+
+.slide {
+  width: 360px;
+  height: 240px;
+  min-width: 360px;
+}
+
+.slide img {
+  width: 100%;
+  display: block;
+}
+
+.slider {
+  width: 100%;
+  overflow: hidden;
+}
+
+.slider__scroller {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 200px;
+}
+
+.visible-p {
+  clip-path: inset(0px 50% 0px 0px);
+}
+.encrypted-p {
+  clip-path: inset(0px 0px 0px 50%);
+  font-family: "Roboto Mono", monospace;
+  font-size: 12px;
+  color: #ffffff60;
+  position: absolute;
+  top: 0;
+}
+
+.encrypted-p .enc strong {
+  color: white;
+}
